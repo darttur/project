@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Головна" />
+        <item
+            android:id="@+id/nav_fridge"
+            android:icon="@drawable/ic_menu_fridge"
+            android:title="Холодильник" />
+        <item
+            android:id="@+id/nav_cook"
+            android:icon="@drawable/ic_menu_cook"
+            android:title="Готування" />
+        <item
+            android:id="@+id/nav_buy"
+            android:icon="@drawable/ic_menu_shop"
+            android:title="Продукти" />
+
+    </group>
+
+</menu>
