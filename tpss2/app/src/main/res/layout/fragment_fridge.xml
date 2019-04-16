@@ -1,53 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_fridge"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Home"
+    android:isScrollContainer="true">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <AutoCompleteTextView
-        android:id="@+id/search_products"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
-        android:hint="Назва продукту" />
+    <!--<AutoCompleteTextView-->
+        <!--android:id="@+id/search_products"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="5dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:hint="Назва продукту" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/recycler_view_fridge"-->
+        <!--android:scrollbars="vertical"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/products"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:text="Продукт"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/add"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:background="@drawable/ic_add_circle_black_24dp" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/product1"
+        android:text="Борошно(1000г)"
+        android:padding="25dp"
+        android:outlineProvider="background"
+        android:shadowRadius="5"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/product2"
+        android:text="Цибуля(5шт)"
+        android:padding="25dp"
+        android:layout_below="@id/product1"/>
 
     <TextView
-        android:id="@+id/products"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Продукти"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/add"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/ic_add_circle_black_24dp" />
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+        android:id="@+id/product3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="80dp" />
+        android:layout_height="75dp"
+        android:layout_below="@id/product2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:padding="25dp"
+        android:text="Риба(1500г)" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/productPluser"
+        android:paddingLeft="200dp"
+        android:text="+"
+        android:textSize="50sp"
+        android:layout_below="@id/product3"/>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:clipChildren="true"-->
+        <!--android:clipToPadding="true"-->
+        <!--android:scrollbars="vertical" />-->
 
-    <Button
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="40dp"
-        android:text="Button" />
 
-</FrameLayout>
 
+</RelativeLayout>
