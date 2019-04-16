@@ -1,5 +1,6 @@
 package com.example.tpss2;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -19,10 +21,11 @@ import java.util.List;
 
 
 public class Fridge extends Fragment implements View.OnClickListener {
-    private RecyclerView recyclerView;
-    private RecyclerViewAdapter recyclerViewAdapter;
-    private List recycler_list;
-    private List recycler_list_images;
+    //private RecyclerView recyclerView;
+    //private RecyclerView.LayoutManager LayoutManager;
+    //private RecyclerViewAdapter recyclerViewAdapter;
+    //private List<String> listData = new ArrayList<>();
+    //private List recycler_list_images;
 
 
 
@@ -36,25 +39,29 @@ public class Fridge extends Fragment implements View.OnClickListener {
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_fridge, container, false);
-        Button btn = (Button) rootView.findViewById(R.id.add);
-    btn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+//        Button btn = rootView.findViewById(R.id.add);
+        //final TextView tex = rootView.findViewById(R.id.products);
 
+        //setupList(8);
 
-        }
-    });
-
-//        recyclerView = recyclerView.findViewById(R.id.recycler_view);
+//        recyclerView=rootView.findViewById(R.id.recycler_view_fridge);
 //        recyclerView.setHasFixedSize(true);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL, false);
-//        layoutManager.scrollToPosition(0);
-//        recyclerView.setLayoutManager(layoutManager);
-//        recycler_list = new ArrayList<>(Arrays.asList("First", "Second"));
-//        recyclerViewAdapter = new RecyclerViewAdapter(recycler_list, recycler_list_images, this);
-//        recyclerView.setAdapter(recyclerViewAdapter);
+//        LayoutManager = new LinearLayoutManager(getContext());
+//        recyclerView.setLayoutManager(LayoutManager);
+//        RecyclerAdapter adapter = new RecyclerAdapter(listData,getContext());
+//        recyclerView.setAdapter(adapter);
 
+//        btn.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//
+//        }
+//    });
         return rootView;
     }
+//    private void setupList(int n){
+//        for(int i=0;i<n;i++)
+//            listData.add("щось там "+i);
+//    }
 
 }
