@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -18,8 +19,11 @@ import java.util.List;
 
 
 public class Fridge extends Fragment implements View.OnClickListener {
+    private RecyclerView recyclerView;
+    private RecyclerViewAdapter recyclerViewAdapter;
+    private List recycler_list;
+    private List recycler_list_images;
 
-//    private RecyclerView recyclerView;
 
 
     @Override
@@ -36,14 +40,19 @@ public class Fridge extends Fragment implements View.OnClickListener {
     btn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            recyclerView = recyclerView.findViewById(R.id.recycler_view);
-//            recyclerView.addItemDecoration( );
 
-            Toast.makeText(getActivity(), "Вы нажали на кнопку",
-                    Toast.LENGTH_SHORT).show();
+
         }
     });
 
+        recyclerView = recyclerView.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL, false);
+        layoutManager.scrollToPosition(0);
+        recyclerView.setLayoutManager(layoutManager);
+        recycler_list = new ArrayList<>(Arrays.asList("First", "Second"));
+        recyclerViewAdapter = new RecyclerViewAdapter(recycler_list, recycler_list_images, this);
+        recyclerView.setAdapter(recyclerViewAdapter);
 
         return rootView;
     }
