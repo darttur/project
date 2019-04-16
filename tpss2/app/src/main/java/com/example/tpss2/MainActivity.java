@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -61,8 +60,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
         if (id == R.id.nav_home) {
-           Home home = new Home();
-           fragmentManager.beginTransaction().replace(R.id.main, home).commit();
+            Home home = new Home();
+            fragmentManager.beginTransaction().replace(R.id.main, home).commit();
         } else if (id == R.id.nav_fridge) {
             Fridge fridge = new Fridge();
             fragmentManager.beginTransaction().replace(R.id.main, fridge).commit();
@@ -72,7 +71,17 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_buy) {
             Buy buy = new Buy();
             fragmentManager.beginTransaction().replace(R.id.main, buy).commit();
+        } else if (id == R.id.nav_save) {
+            Save save = new Save();
+            fragmentManager.beginTransaction().replace(R.id.main, save).commit();
+        } else if (id == R.id.nav_profile) {
+            Profile profile = new Profile();
+            fragmentManager.beginTransaction().replace(R.id.main, profile).commit();
+        } else if (id == R.id.nav_settings) {
+            Settings settings = new Settings();
+            fragmentManager.beginTransaction().replace(R.id.main, settings).commit();
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

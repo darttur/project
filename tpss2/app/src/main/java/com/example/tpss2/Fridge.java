@@ -45,14 +45,14 @@ public class Fridge extends Fragment implements View.OnClickListener {
         }
     });
 
-        recyclerView = recyclerView.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL, false);
-        layoutManager.scrollToPosition(0);
-        recyclerView.setLayoutManager(layoutManager);
-        recycler_list = new ArrayList<>(Arrays.asList("First", "Second"));
-        recyclerViewAdapter = new RecyclerViewAdapter(recycler_list, recycler_list_images, this);
-        recyclerView.setAdapter(recyclerViewAdapter);
+//        recyclerView = recyclerView.findViewById(R.id.recycler_view);
+//        recyclerView.setHasFixedSize(true);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL, false);
+//        layoutManager.scrollToPosition(0);
+//        recyclerView.setLayoutManager(layoutManager);
+//        recycler_list = new ArrayList<>(Arrays.asList("First", "Second"));
+//        recyclerViewAdapter = new RecyclerViewAdapter(recycler_list, recycler_list_images, this);
+//        recyclerView.setAdapter(recyclerViewAdapter);
 
         return rootView;
     }
