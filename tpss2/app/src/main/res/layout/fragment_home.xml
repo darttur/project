@@ -7,5 +7,10 @@
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/v2_ppuqre"
+        android:layout_marginTop="-60dp"
+        />
 </FrameLayout>
