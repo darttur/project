@@ -48,14 +48,17 @@
         android:padding="25dp"
         android:outlineProvider="background"
         android:shadowRadius="5"
-        />
+        android:textSize="17sp"
+        android:background="@drawable/text_view_border"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:id="@+id/product2"
         android:text="Цибуля(5шт)"
         android:padding="25dp"
-        android:layout_below="@id/product1"/>
+        android:layout_below="@id/product1"
+        android:textSize="17sp"
+        android:background="@drawable/text_view_border"/>
 
     <TextView
         android:id="@+id/product3"
@@ -63,17 +66,20 @@
         android:layout_height="75dp"
         android:layout_below="@id/product2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="4dp"
         android:padding="25dp"
-        android:text="Риба(1500г)" />
+        android:text="Риба(1500г)"
+        android:textSize="17sp"
+        android:background="@drawable/text_view_border"/>
+
     <TextView
+        android:id="@+id/productPluser"
+        android:background="@drawable/text_view_border"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:id="@+id/productPluser"
-        android:paddingLeft="200dp"
+        android:layout_below="@id/product3"
         android:text="+"
-        android:textSize="50sp"
-        android:layout_below="@id/product3"/>
+        android:textAlignment="center"
+        android:textSize="50sp" />
     <!--<android.support.v7.widget.RecyclerView-->
         <!--android:id="@+id/recycler_view"-->
         <!--android:layout_width="match_parent"-->
@@ -85,3 +91,4 @@
 
 
 </RelativeLayout>
+
