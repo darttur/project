@@ -8,27 +8,36 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <AutoCompleteTextView
-        android:id="@+id/search_products2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Назва продукту" />
-
-    <Button
-        android:id="@+id/add2"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/ic_add_circle_black_24dp" />
-
-    <android.support.v7.widget.RecyclerView
+    <TextView
+        android:id="@+id/product1b"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:paddingLeft="20dp" >
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:padding="25dp"
+        android:text="Оливкова олія(1л)"
+        android:textSize="17sp"
+        android:background="@drawable/text_view_border"/>
 
-    </android.support.v7.widget.RecyclerView>
-</FrameLayout>
+    <TextView
+        android:id="@+id/productPluser"
+        android:background="@drawable/text_view_border"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/product1b"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="280dp"
+        android:layout_gravity="center"
+        android:text="Шукати"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:paddingTop="15dp"
+        android:background="@drawable/text_view_border"/>
+    </FrameLayout>
